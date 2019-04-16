@@ -9,7 +9,9 @@ public class BasicStringUtils {
      * @return new String which wraps the arguments passed in
      */
     public static String getString(char[] chars) {
-        return null;
+      String newString = String.copyValueOf(chars);
+
+        return newString;
     }
 
     /**
@@ -17,7 +19,12 @@ public class BasicStringUtils {
      * @return new String which wraps the arguments passed in
      */
     public static String getString(Character[] chars) {
-        return null;
+        String newString = "";
+        for(Character c : chars){
+            newString += c;
+        }
+
+        return newString;
     }
 
     /**

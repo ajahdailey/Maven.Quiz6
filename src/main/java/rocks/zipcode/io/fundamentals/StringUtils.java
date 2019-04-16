@@ -29,8 +29,11 @@ public class StringUtils {
      * @return near-identical string whose characters at specified indices are capitalized
      */
     public static String upperCaseIndices(String string, Integer... indices) {
+        for (int i = 0; i < string.length(); i++) {
 
-      return null;
+
+        }
+      return string;
 
 
     }
