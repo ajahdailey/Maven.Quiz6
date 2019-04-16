@@ -45,11 +45,12 @@ public class CollectionUtils {
      * @param collections - collections to be combined
      * @return a single collection containing the aggregate contents of each collection passed in as an argument
      */
-    public static Collection<?> flatten(Collection<?>... collections) {
+    public static<E> Collection<? extends E> flatten(Collection<?>... collections) {
+    ArrayList<? extends E> result = new ArrayList<>();
+    for(Collection collection : collections) {
+        result.addAll(collection);
 
-        return null;
-
-
-
+    }
+return result;
     }
 }
