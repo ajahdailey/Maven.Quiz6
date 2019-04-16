@@ -4,7 +4,7 @@ import java.util.Arrays;
 import java.util.function.Predicate;
 
 public enum TVChannel {
-    ADD_ENUMERATIONS_HERE;
+    ordinal, name;
 
     /**
      * @param ordinal; ordinal of the expected enumeration

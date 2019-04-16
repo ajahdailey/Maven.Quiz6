@@ -13,7 +13,9 @@ public class StringUtils {
      */
     public static Collection<String> getAllCasings(String string) {
         // get length of string
+        int length = string.length();
         // get range of length
+
         // get power-set of range
 
         // for every set in power-set
@@ -27,7 +29,10 @@ public class StringUtils {
      * @return near-identical string whose characters at specified indices are capitalized
      */
     public static String upperCaseIndices(String string, Integer... indices) {
-        return null;
+
+      return null;
+
+
     }
 
     /**
@@ -37,7 +42,12 @@ public class StringUtils {
      * @return near-identical string with `valueToBeInserted` inserted at `index`
      */
     public static String insertAtIndex(String stringToBeManipulated, String valueToBeInserted, Integer index) {
-        return null;
+      StringBuilder sb = new StringBuilder(stringToBeManipulated);
+
+      sb.insert(index, valueToBeInserted);
+
+
+        return sb.toString();
     }
 
     /**
@@ -47,6 +57,12 @@ public class StringUtils {
      * @return near-identical string with character at `index` replaced with `replacementValue`
      */
     public static String replaceAtIndex(String stringToBeManipulated, Character replacementValue, Integer index) {
-        return null;
+   StringBuilder sb = new StringBuilder(stringToBeManipulated);
+   sb.setCharAt(index, replacementValue);
+
+
+
+
+        return sb.toString();
     }
 }
